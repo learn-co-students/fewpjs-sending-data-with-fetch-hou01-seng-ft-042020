@@ -10,9 +10,9 @@ function submitData(name, email){
     })
     .then(res => res.json())
     .then(json => {
-        document.body.innerHTML = json["id"]
+        document.body.textContent = json["id"]
     })
     .catch(error => {
-        document.body.innerHTML = error.message
+        document.body.textContent = error.message
     })
 }
